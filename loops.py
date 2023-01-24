@@ -1,5 +1,6 @@
 names =['samater', 'mahad', 'mohamed']
 names.append("nimcan")
+names.sort()
 print(f"the length of the lists is {len(names)}")
 for name in names:
     print(name)
