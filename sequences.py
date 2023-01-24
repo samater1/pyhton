@@ -1,3 +1,3 @@
 names =["samater", "abdi", "mohamed"]
 names.append("ahmed")
-print(names)
+print(names[0])
