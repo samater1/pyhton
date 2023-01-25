@@ -1,5 +1,5 @@
 def square(x):
     return x * x
-
-x=int(input("number:"))
-print(square(x))
+def sum(x,y):
+    return x+y
+    
