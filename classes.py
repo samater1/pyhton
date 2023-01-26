@@ -23,12 +23,15 @@ for person in range(10):
         break
 for person in range(10):
     person = input("name:")
-    success = flight1.add_passenger(person)
-    if success:
-        print(f"added {person} to the flight successfuly")
+    if person == "":
+        print("please enter the name of the passenger")
     else:
-        print(f"no available seats {person}")
-        break
+        success = flight1.add_passenger(person)
+        if success:
+            print(f"added {person} to the flight successfuly")
+        else:
+            print(f"no available seats {person}")
+            break
 
 print(flight.pasengers)
 print(flight1.pasengers)
