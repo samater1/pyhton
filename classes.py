@@ -15,12 +15,15 @@ flight1 = Flight(3)
 flight2 = Flight(3)
 for person in range(10):
     person = input("name:")
-    success = flight.add_passenger(person)
-    if success:
-        print(f"added {person} to the flight successfuly")
+    if person == "":
+        print("please enter the name of the passenger")
     else:
-        print(f"no available seats {person}")
-        break
+        success = flight.add_passenger(person)
+        if success:
+            print(f"added {person} to the flight successfuly")
+        else:
+            print(f"no available seats {person}")
+            break
 for person in range(10):
     person = input("name:")
     if person == "":
