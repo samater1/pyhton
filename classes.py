@@ -5,5 +5,4 @@ class Points():
         self.y=y
 
 p1 = Points(2,7)
-print(p1.x)
-print(p1.y)
+print((p1.x,p1.y))
