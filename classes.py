@@ -4,6 +4,8 @@ class Points():
         self.x=x
         self.y=y
 
-p1 = Points(2,7)
+x=int(input("x: "))
+y=int(input("y: "))
+p1 = Points(x,y)
 print(p1.x)
 print(p1.y)
